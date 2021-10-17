@@ -1,0 +1,14 @@
+.title {
+  font-size: 45rpx;
+  text-align: center;
+  margin-top: 14rpx;
+  margin-bottom: 14rpx;
+  font-weight:bold;
+  color: #fff;
+}
+
+.intro {
+  margin: 30px;
+  text-align: center;
+  color:#fff;
+}

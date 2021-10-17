@@ -1,0 +1,17 @@
+<!--index.wxml-->
+
+
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/taikongren1.gif" style= "width: 80%;">
+  </image>
+</view>
+
+<text> \n </text>
+
+<view class= "title">Space X 火箭信息</view>
+
+<text> \n </text>
+<!-- 最好能保留这一行 -->
+<view class="staff" bindtap="copyTBL">Pao_Leo (单击可复制)</view>
+<text> \n\n\n </text>
+

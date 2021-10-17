@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/science/index"
+  ],
+  "window": {
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "Space X 火箭信息",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#000",
+    "selectedColor":"#94070a",
+    "color": "#fff",
+    "list": [
+      {
+        "text": "火箭",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "发射",
+        "pagePath": "pages/science/index"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/index"
+      }
+    ]
+  },
+
+  "usingComponents": {
+    "van-cell": "vant-weapp/cell/index",
+    "van-cell-group": "vant-weapp/cell-group/index",
+    "van-tab": "vant-weapp/tab/index",
+    "van-tabs": "vant-weapp/tabs/index"
+  }
+
+}
