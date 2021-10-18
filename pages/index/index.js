@@ -1,26 +1,13 @@
 var app = getApp()
-var localData = require("../../data/Rocket.js");
 
 Page({
   data: {
     navbar: ['Falcon 1', 'Falcon 9', 'Falcon Heavy', 'Starship'],
-    currentTab: 0,
   },
 
-  //在这里加载本地json数据
-  onLoad: function () {
-    this.setData({
-      //localData.dataList获取本地Rocket.js里定义的dataList数据，并赋值给dataList
-      dataList: localData.dataList
-    });
-  },
-  
-  navbarTap: function (e) {
-    this.setData({
-      currentTab: e.currentTarget.dataset.idx
-    })
-  },
 
+
+  //下拉刷新
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh()
   },

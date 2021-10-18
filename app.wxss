@@ -99,7 +99,7 @@ page {
   font-size: 30rpx;
   flex-direction:row;
   margin-left: 5rem;
-  color:#353535;
+  color:#fff;
   text-align: center;
 }
 
