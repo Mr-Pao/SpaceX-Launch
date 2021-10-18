@@ -1,38 +1,31 @@
 
-<image  mode="widthFix" style= "width: 100%;" src="/pages/images/SpaceX.jpg" ></image>
 
 <navigator url="/pages/index/Rocket/index?title=0">
-  <view class="card" >
-    <view bindtap="onItemClick">
-      <image class="image" mode="aspectFill" src="/pages/images/{{navbar[0]}}/2.png"/>
-      <view class="title">标题</view>
-    </view>
+  <view class="card" bindtap="onItemClick">
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[0]}}/2.png"/>
+      <view class="title">{{navbar[0]}}</view>
   </view>
 </navigator>
 
 <navigator url="/pages/index/Rocket/index?title=1">
-  <view class="card" >
-    <view bindtap="onItemClick">
-      <image class="image" mode="aspectFill" src="/pages/images/{{navbar[1]}}/2.png"/>
-      <view class="title">标题</view>
-    </view>
+  <view class="card" bindtap="onItemClick">
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[1]}}/2.png"/>
+      <view class="title">{{navbar[1]}}</view>
   </view>
 </navigator>
 
 <navigator url="/pages/index/Rocket/index?title=2">
-  <view class="card" >
-    <view bindtap="onItemClick">
-      <image class="image" mode="aspectFill" src="/pages/images/{{navbar[2]}}/2.png"/>
-      <view class="title">标题</view>
-    </view>
+  <view class="card" bindtap="onItemClick">
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[2]}}/2.png"/>
+      <view class="title">{{navbar[2]}}</view>
   </view>
 </navigator>
 
 <navigator url="/pages/index/Rocket/index?title=3">
-  <view class="card" >
-    <view bindtap="onItemClick">
-      <image class="image" mode="aspectFill" src="/pages/images/{{navbar[3]}}/2.png"/>
-      <view class="title">标题</view>
-    </view>
+  <view class="card" bindtap="onItemClick">
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[3]}}/2.png"/>
+      <view class="title">{{navbar[3]}}</view>
   </view>
 </navigator>
+
+<text> \n\n\n\n\n</text>

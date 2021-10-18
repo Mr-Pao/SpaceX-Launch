@@ -2,7 +2,7 @@
 
 
 <view style="display:flex; justify-content:center; align-items:center;">
-  <image mode="widthFix" src="/pages/images/taikongren1.gif" style= "width: 80%;">
+  <image mode="widthFix" src="http://tiebapic.baidu.com/forum/w%3D580/sign=8a954fa1beec8a13141a57e8c7029157/6934e52209f79052459b2c701bf3d7ca7acbd50e.jpg" style= "width: 80%;">
   </image>
 </view>
 

@@ -134,31 +134,3 @@ page {
   text-align: right;
 }
 
-.cat_image {
-  border-radius: 10rpx;
-  overflow: hidden;
-}
-
-.cat-card {
-  font-size: 45rpx;
-  color:black; 
-  font-weight:bold;
-  justify-content: flex-start;
-}
-
-.sound {
-  margin-top: 9rpx;
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.adContainer {
-  width:100%;
-  display: flex;
-  justify-content: center;
-}
-
-.adContainer ad {
-  width:100%;
-}
