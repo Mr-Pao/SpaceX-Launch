@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 50px;
-  background: white;
+  background: rgb(235, 235, 235);
   display: flex;
   padding-bottom: env(safe-area-inset-bottom);
 }

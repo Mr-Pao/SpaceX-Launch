@@ -1,5 +1,9 @@
 
-<image mode="widthFix" style= "width: 100%;" src="/pages/images/{{dataList[title].name}}/2.png" ></image>
+<view>
+  <text> \n\n</text>
+  <image  mode='aspectFill' style= "width: 100%;" src="/pages/images/{{dataList[title].name}}/2.png" ></image>
+</view>
+
 <!-- 基本信息 -->
 <van-cell-group inset>
   <van-cell title="{{dataList[title].name}}" size="large" />
@@ -49,3 +53,4 @@
 </van-cell-group>
 
  
+<text> \n\n</text>

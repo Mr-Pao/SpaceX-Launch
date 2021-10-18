@@ -1,11 +1,6 @@
 
 
-<navigator url="/pages/index/Rocket/index?title=0">
-  <view class="card" bindtap="onItemClick">
-      <image class='image' mode="widthFix" src="/pages/images/{{navbar[0]}}/2.png"/>
-      <view class="title">{{navbar[0]}}</view>
-  </view>
-</navigator>
+<text> \n\n</text>
 
 <navigator url="/pages/index/Rocket/index?title=1">
   <view class="card" bindtap="onItemClick">
