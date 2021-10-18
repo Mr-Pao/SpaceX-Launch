@@ -6,7 +6,7 @@ page{
 
 
 .card {
-  height: 400rpx;  
+
   border: 2rpx solid rgb(0, 0, 0);
   border-radius: 10rpx;
   background-color: #000000;
@@ -17,20 +17,19 @@ page{
 }
 
 .image {
-  width: 100%;
+  width: 150%;
 }
 
 .title {
-  font-size: 60rpx;
+  font-size: 50rpx;
   font-weight:bold;
   color: #1e36b9;
   width: 100%;
-  height: 10rpx;  
+  height: 20rpx;  
   position: absolute;
-  left: 0;
+  left: 0rpx;
   top: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  text-align: center;
 }  

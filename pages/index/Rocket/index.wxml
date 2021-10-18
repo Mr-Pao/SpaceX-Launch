@@ -1,7 +1,7 @@
 
-<view>
+<view >
   <text> \n\n</text>
-  <image  mode='aspectFill' style= "width: 100%;" src="/pages/images/{{dataList[title].name}}/2.png" ></image>
+  <image  class="image" mode='aspectFill' src="/pages/images/{{dataList[title].name}}/2.png" ></image>
 </view>
 
 <!-- 基本信息 -->

@@ -3,3 +3,7 @@ page{
   flex-direction: column;
   height: 100%;
 }
+
+.image {
+  width: 100%;
+}
