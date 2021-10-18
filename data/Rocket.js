@@ -459,7 +459,8 @@ var json =  [
         }
       ]
 
-      //定义数据出口
-      module.exports = {
-        dataList: json
-      }
+      
+//定义数据出口
+module.exports = {
+  dataList: json
+}

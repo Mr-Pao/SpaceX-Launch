@@ -1,0 +1,16 @@
+/*分割线样式*/
+.divLine{
+    background: #eee;
+    height: 3rpx;
+    margin-left: 5rem;
+   }
+   
+   
+/*发射名称*/
+.launch-name{
+    font-size: 60rpx;
+    flex-direction:row;
+    margin-left: 5rem;
+    color:#fff;
+    text-align: left;
+}

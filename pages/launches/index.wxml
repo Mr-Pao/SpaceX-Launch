@@ -1,0 +1,27 @@
+<van-tabs swipeable>
+  <van-tab title="发射计划">
+    <block wx:for="{{dataListupcoming}}">
+        <navigator url="/pages/launches/launchone/index?title={{index}}" >
+            <view >
+                <van-cell title="{{index+1}} . {{item.name}}" value="{{item.date_utc}}" />
+            </view>
+        </navigator>
+       <view class="divLine"></view>
+    </block>
+  </van-tab>
+
+
+  <van-tab title="已经发射">
+    <block wx:for="{{dataListpast}}">
+        <navigator url="/pages/launches/launchone/index?title={{index}}" >
+            <view >
+                <van-cell title="{{index+1}} . {{item.name}}" value="内容" /> 
+            </view>
+        </navigator>
+       <view class="divLine"></view>
+    </block>
+  </van-tab>
+
+</van-tabs>
+
+
