@@ -3,6 +3,11 @@ var localData1 = require("../../data/Launches-past.js")
 var localData2 = require("../../data/Launches-upcoming.js")
 
 Page({
+  //页面的初始数据
+  data: {
+    navbar: ['发射计划', '已经发射'],
+    currentTab: 0,
+  },
 
   onLoad: function (options) {
     this.setData({
@@ -58,6 +63,6 @@ Page({
         console.log("转发失败:" + JSON.stringify(res));
       }
     }
-  }
+  },
 
 })

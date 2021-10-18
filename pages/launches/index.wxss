@@ -1,16 +1,69 @@
+page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
 /*分割线样式*/
 .divLine{
     background: #eee;
     height: 3rpx;
-    margin-left: 5rem;
+    margin-left: 0;
    }
    
    
 /*发射名称*/
 .launch-name{
-    font-size: 60rpx;
+    font-size: 40rpx;
     flex-direction:row;
-    margin-left: 5rem;
-    color:#fff;
+    margin-left: 0;
+    color:rgb(0, 0, 0);
     text-align: left;
 }
+
+/*发射时间*/
+.launch-time{
+    font-size: 30rpx;
+    flex-direction:row;
+    margin-left: 0;
+    color:rgb(0, 0, 0);
+    text-align: right;
+}
+
+
+.card{
+    width: 90%;
+    margin-left: 5%;
+    height: 150rpx;
+    background: rgb(255, 255, 255);
+    border-radius: 10rpx;
+    box-shadow: 5px 5px 5px #cdcfcf;
+   }
+
+.navbar{
+    position: sticky;
+    top: 0;
+    flex: none;
+    display: flex;
+    background: #fff;
+  }
+  .navbar .item{
+    position: relative;
+    flex: auto;
+    text-align: center;
+    line-height: 80rpx;
+    color: #888888;
+  }
+  .navbar .item.active{
+    color: #94070a;
+  }
+  .navbar .item.active:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 4rpx;
+    background: #94070a;
+  }
