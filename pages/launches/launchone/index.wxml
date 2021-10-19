@@ -1,9 +1,8 @@
 
-<view >
-  <text> \n\n</text>
-  <image  class="image" mode='aspectFill' src="/pages/images/{{dataList[title].name}}/2.png" ></image>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="{{dataListupcoming[title].links.patch.small}}" style= "width: 60%;">
+  </image>
 </view>
-
-
  
 <text> \n\n</text>

@@ -76,4 +76,3 @@ wx.showShareMenu({
 })
 
 wx.setInnerAudioOption({ obeyMuteSwitch: false });
-

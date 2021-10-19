@@ -5,7 +5,10 @@ page{
 }
 
 .image {
-  width: 100%;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 

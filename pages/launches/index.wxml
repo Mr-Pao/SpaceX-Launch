@@ -7,12 +7,13 @@
 <view hidden="{{currentTab!==0}}">
   <block wx:for="{{dataListupcoming}}">
         <navigator url="/pages/launches/launchone/index?title={{index}}" >
-            <view class="card">
-              <text> \n</text>
-              <view class="launch-name">{{index+1}} . {{dataListupcoming[index].name}}</view>
-              <text> \n</text>
-              <view class="launch-time">{{dataListupcoming[index].date_utc}}</view>
-            </view>
+          <van-card
+            num="任务详情"
+            tag="#{{dataListupcoming[index].flight_number}}"
+            price="{{dataListupcoming[index].date_utc}}"
+            title="{{dataListupcoming[index].name}}"
+            thumb="{{dataListupcoming[index].links.patch.small}}"
+          ></van-card>
         </navigator>
     </block>
 </view>
@@ -20,12 +21,13 @@
 <view hidden="{{currentTab!==1}}">
   <block wx:for="{{dataListpast}}">
         <navigator url="/pages/launches/launchone/index?title={{index}}" >
-            <view class="card">
-              <text> \n</text>
-              <view class="launch-name">{{index+1}} . {{dataListpast[index].name}}</view>
-              <text> \n</text>
-              <view class="launch-time">{{dataListpast[index].date_utc}}</view>
-            </view>
+          <van-card
+            num="任务详情"
+            tag="#{{dataListpast[index].flight_number}}"
+            price="{{dataListpast[index].date_utc}}"
+            title="{{dataListpast[index].name}}"
+            thumb="{{dataListpast[index].links.patch.small}}"
+          ></van-card>
         </navigator>
     </block>
 </view>

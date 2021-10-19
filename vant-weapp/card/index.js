@@ -30,7 +30,7 @@ VantComponent({
         },
         currency: {
             type: String,
-            value: '¥',
+            value: '',
         },
     },
     methods: {

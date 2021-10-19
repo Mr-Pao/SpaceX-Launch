@@ -10,8 +10,8 @@ Component({
       text: "火箭"
     },{
       pagePath: "/pages/launches/index",
-      iconPath: "/pages/images/guanyu1.png",
-      selectedIconPath: "/pages/images/guanyu2.png",
+      iconPath: "/pages/images/fashe1.png",
+      selectedIconPath: "/pages/images/fashe2.png",
       text: "发射任务"
     },{
       pagePath: "/pages/about/index",

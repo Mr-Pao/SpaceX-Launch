@@ -10,8 +10,23 @@ page{
     height: 3rpx;
     margin-left: 0;
    }
-   
-   
+
+/*发射头像*/
+.image {
+    width: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+/*发射编号*/
+.launch-number{
+  font-size: 40rpx;
+  margin-left: 40rpx;
+  color:rgb(255, 255, 255);
+  text-align: left;
+}
+
 /*发射名称*/
 .launch-name{
     font-size: 40rpx;
@@ -29,22 +44,13 @@ page{
 }
 
 
-.card{
-    width: 90%;
-    margin-left: 5%;
-    height: 200rpx;
-    background: rgb(75, 75, 75);
-    border-radius: 20rpx;
-    box-shadow: 4px 4px 8px  rgba(26, 25, 25, 0.5);
-    margin-bottom: 20px;
-   }
-
 .navbar{
-    position: sticky;
+  height: 100rpx;
     top: 0;
     flex: none;
     display: flex;
     background: rgb(0, 0, 0);
+    font-weight:600;
   }
   .navbar .item{
     position: relative;

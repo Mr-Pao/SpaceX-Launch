@@ -5,7 +5,7 @@ var localData2 = require("../../data/Launches-upcoming.js")
 Page({
   //页面的初始数据
   data: {
-    navbar: ['发射计划', '已经发射'],
+    navbar: ['待发射', '已发射'],
     currentTab: 0,
   },
 
