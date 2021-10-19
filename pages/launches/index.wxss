@@ -15,18 +15,16 @@ page{
 /*发射名称*/
 .launch-name{
     font-size: 40rpx;
-    flex-direction:row;
-    margin-left: 0;
-    color:rgb(0, 0, 0);
+    margin-left: 40rpx;
+    color:rgb(255, 255, 255);
     text-align: left;
 }
 
 /*发射时间*/
 .launch-time{
     font-size: 30rpx;
-    flex-direction:row;
     margin-left: 0;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     text-align: right;
 }
 
@@ -34,10 +32,11 @@ page{
 .card{
     width: 90%;
     margin-left: 5%;
-    height: 150rpx;
-    background: rgb(255, 255, 255);
-    border-radius: 10rpx;
-    box-shadow: 5px 5px 5px #cdcfcf;
+    height: 200rpx;
+    background: rgb(75, 75, 75);
+    border-radius: 20rpx;
+    box-shadow: 4px 4px 8px  rgba(26, 25, 25, 0.5);
+    margin-bottom: 20px;
    }
 
 .navbar{
@@ -45,17 +44,17 @@ page{
     top: 0;
     flex: none;
     display: flex;
-    background: #fff;
+    background: rgb(0, 0, 0);
   }
   .navbar .item{
     position: relative;
     flex: auto;
     text-align: center;
     line-height: 80rpx;
-    color: #888888;
+    color: #ffffff;
   }
   .navbar .item.active{
-    color: #94070a;
+    color: #1e36b9;
   }
   .navbar .item.active:after{
     content: "";
@@ -65,5 +64,5 @@ page{
     left: 20px;
     right: 20px;
     height: 4rpx;
-    background: #94070a;
+    background: #1e36b9;
   }

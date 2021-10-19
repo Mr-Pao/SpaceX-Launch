@@ -2,12 +2,16 @@
   <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
 </view>
 
+<text> \n</text>
+
 <view hidden="{{currentTab!==0}}">
   <block wx:for="{{dataListupcoming}}">
         <navigator url="/pages/launches/launchone/index?title={{index}}" >
             <view class="card">
-                <view class="launch-name">{{index+1}} . {{dataListupcoming[index].name}}</view>
-                <view class="launch-time">{{dataListupcoming[index].date_utc}}</view>
+              <text> \n</text>
+              <view class="launch-name">{{index+1}} . {{dataListupcoming[index].name}}</view>
+              <text> \n</text>
+              <view class="launch-time">{{dataListupcoming[index].date_utc}}</view>
             </view>
         </navigator>
     </block>
@@ -17,8 +21,10 @@
   <block wx:for="{{dataListpast}}">
         <navigator url="/pages/launches/launchone/index?title={{index}}" >
             <view class="card">
+              <text> \n</text>
               <view class="launch-name">{{index+1}} . {{dataListpast[index].name}}</view>
-                <view class="launch-time">{{dataListpast[index].date_utc}}</view>
+              <text> \n</text>
+              <view class="launch-time">{{dataListpast[index].date_utc}}</view>
             </view>
         </navigator>
     </block>
