@@ -23,6 +23,18 @@
                     "pathName": "pages/launches/index",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/launches/launchone/index",
+                    "pathName": "pages/launches/launchone/index",
+                    "query": "title=0",
+                    "scene": null
                 }
             ]
         }

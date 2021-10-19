@@ -23,7 +23,7 @@ page{
 .title {
   font-size: 50rpx;
   font-weight:bold;
-  color: #1e36b9;
+  color: #3978BB;
   width: 100%;
   height: 20rpx;  
   position: absolute;

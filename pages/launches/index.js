@@ -1,6 +1,8 @@
+
 var app = getApp()
 var localData1 = require("../../data/Launches-past.js")
 var localData2 = require("../../data/Launches-upcoming.js")
+
 
 Page({
   //页面的初始数据
@@ -34,7 +36,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      path: 'pages/index/index',  // 路径，传递参数到指定页面。
+      path: 'pages/launches/index',  // 路径，传递参数到指定页面。
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
@@ -53,7 +55,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      path: 'pages/index/index',  // 路径，传递参数到指定页面。
+      path: 'pages/launches/index',  // 路径，传递参数到指定页面。
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
@@ -66,3 +68,5 @@ Page({
   },
 
 })
+
+

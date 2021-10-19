@@ -5,7 +5,7 @@
     height: 200rpx;
     width: 90%;
     margin-left: 5%;
-    background-color:var(--card-background-color,rgb(85, 85, 85));
+    background-color:var(--card-background-color,#282828);
     box-sizing:border-box;
     color:var(--card-text-color,#ffffff);
     font-size:var(--card-font-size,12px);
@@ -54,11 +54,11 @@
 .van-card__title{
     font-size: 40rpx;
     font-weight:550;
-    line-height:var(--card-title-line-height,26px)
+    line-height:var(--card-title-line-height,35px)
 }
 
 .van-card__desc{
-    olor:var(--card-desc-color,#c7cace);
+    color:var(--card-desc-color,#a0a0a0);
     line-height:var(--card-desc-line-height,30px)
 }
 
@@ -71,11 +71,21 @@
     font-weight:500
 }
 
-.van-card__price-integer{font-size:var(--card-price-integer-font-size,16px)}
+.van-card__price-integer{
+    font-size:var(--card-price-integer-font-size,16px)
+}
 
-.van-card__price-decimal,.van-card__price-integer{font-family:var(--card-price-font-family,Avenir-Heavy,PingFang SC,Helvetica Neue,Arial,sans-serif)}
+.van-card__price-decimal,.van-card__price-integer{
+    font-family:var(--card-price-font-family,Avenir-Heavy,PingFang SC,Helvetica Neue,Arial,sans-serif)
+}
 
-.van-card__origin-price{color:var(--card-origin-price-color,#646566);display:inline-block;font-size:var(--card-origin-price-font-size,10px);margin-left:5px;text-decoration:line-through}
+.van-card__origin-price{
+    color:var(--card-origin-price-color,#646566);
+    display:inline-block;
+    font-size:var(--card-origin-price-font-size,10px);
+    margin-left:5px;
+    text-decoration:line-through
+}
 
 .van-card__num{
     color: rgb(187, 187, 187);
@@ -83,7 +93,7 @@
 }
 
 .van-card__tag{
-    background-color: #1e36b9;
+    background-color: #3798bb;
     left:0;
     position:absolute!important;
     top:2px}

@@ -1,17 +1,17 @@
 @import '../common/index.wxss';
 .van-cell{
-    background-color:var(--cell-background-color,#fff);
+    background-color:var(--cell-background-color,#282828);
     box-sizing:border-box;
-    color:var(--cell-text-color,#323233);
+    color:var(--cell-text-color,#FFF);
     display:flex;
-    font-size:var(--cell-font-size,14px);
+    font-size:var(--cell-font-size,16px);
     line-height:var(--cell-line-height,24px);
     padding:var(--cell-vertical-padding,10px) var(--cell-horizontal-padding,16px);
     position:relative;width:100%
 }
 
 .van-cell:after{
-    border-bottom:1px solid #ebedf0;
+    border-bottom:1px solid #a0a0a0;
     bottom:0;
     box-sizing:border-box;
     content:" ";
@@ -32,14 +32,14 @@
 }
 
 .van-cell__label{
-    color:var(--cell-label-color,#969799);
+    color:var(--cell-label-color,#3798BB);
     font-size:var(--cell-label-font-size,12px);
     line-height:var(--cell-label-line-height,18px);
     margin-top:var(--cell-label-margin-top,3px)
 }
 
 .van-cell__value{
-    color:var(--cell-value-color,#969799);
+    color:var(--cell-value-color,#e0e0e0);
     overflow:hidden;
     text-align:right;
     vertical-align:middle
@@ -77,7 +77,25 @@
     line-height:var(--cell-line-height,24px)
 }
 
-.van-cell--clickable.van-cell--hover{background-color:var(--cell-active-color,#f2f3f5)}.van-cell--required{overflow:visible}.van-cell--required:before{color:var(--cell-required-color,#ee0a24);content:"*";font-size:var(--cell-font-size,14px);left:var(--padding-xs,8px);position:absolute}.van-cell--center{align-items:center}
+.van-cell--clickable.van-cell--hover{
+    background-color:var(--cell-active-color,#f2f3f5)
+}
+
+.van-cell--required{
+    overflow:visible
+}
+
+.van-cell--required:before{
+    color:var(--cell-required-color,#ee0a24);
+    content:"*";
+    font-size:var(--cell-font-size,14px);
+    left:var(--padding-xs,8px);
+    position:absolute
+}
+
+.van-cell--center{
+    align-items:center
+}
 
 .van-cell--large{
     padding-bottom:var(--cell-large-vertical-padding,12px);
@@ -85,8 +103,8 @@
 }
 
 .van-cell--large .van-cell__title{
-    font-size:var(--cell-large-title-font-size,22px);
-    color:var(--cell-large-title-font-color,#1e36b9);
+    font-size:var(--cell-large-title-font-size,24px);
+    color:var(--cell-large-title-font-color,#3978BB);
     font-weight:var(--cell-large-title-font-weight,bold);
 }
 

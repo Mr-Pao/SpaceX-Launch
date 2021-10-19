@@ -8,7 +8,7 @@
         "backgroundColor": "#000000",
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#000000",
-        "navigationBarTitleText": "Space X 火箭信息",
+        "navigationBarTitleText": "SpaceX 火箭信息",
         "navigationBarTextStyle": "white",
         "enablePullDownRefresh": true
     },
@@ -20,7 +20,7 @@
         "color": "#fff",
         "list": [
             {
-                "text": "火箭",
+                "text": "火箭信息",
                 "pagePath": "pages/index/index"
             },
             {

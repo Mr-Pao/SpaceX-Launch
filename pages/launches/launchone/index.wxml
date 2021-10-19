@@ -5,4 +5,53 @@
   </image>
 </view>
  
-<text> \n\n</text>
+<!-- 基本信息 -->
+<van-cell-group inset>
+  <van-cell title="{{dataList[title].name}}" size="large" />
+  <van-cell title="{{dataList[title].description}}" />
+  <van-cell title="发射费用" value="＄{{dataList[title].cost_per_launch}}" />
+  <van-cell title="发射成功率" value="{{dataList[title].success_rate_pct}}%" />
+  <van-cell title="高度" value="{{dataList[title].height.meters}}m" />
+  <van-cell title="直径" value="{{dataList[title].diameter.meters}}m" />
+  <van-cell title="重量" value="{{dataList[title].mass.kg}}kg" />
+  <van-cell title="火箭级数" value="{{dataList[title].stages}}" />
+</van-cell-group>
+<!-- 发动机 -->
+<van-cell-group inset>
+  <van-cell title="发动机" size="large"/>
+  <van-cell title="类型" value="{{dataList[title].engines.type}}" />
+  <van-cell title="版本" value="{{dataList[title].engines.version}}" />
+  <van-cell title="燃料1" value="{{dataList[title].engines.propellant_1}}" />
+  <van-cell title="燃料2" value="{{dataList[title].engines.propellant_2}}" />
+  <van-cell title="海平面推力" value="{{dataList[title].engines.thrust_sea_level.kN}}kN" />
+  <van-cell title="真空推力" value="{{dataList[title].engines.thrust_vacuum.kN}}kN" />
+</van-cell-group>
+<!-- 一级发动机 -->
+<van-cell-group inset>
+  <van-cell title="一级发动机" size="large"/>
+  <van-cell title="发动机数量" value="{{dataList[title].first_stage.engines}}"  />
+  <van-cell title="是否可回收" value=" {{dataList[title].first_stage.reusable}}"  />
+  <van-cell title="燃料重量" value="{{dataList[title].first_stage.fuel_amount_tons}}t"  />
+  <van-cell title="燃烧时间" value="{{dataList[title].first_stage.burn_time_sec}}s"  />
+  <van-cell title="海平面推力" value="{{dataList[title].first_stage.thrust_sea_level.kN}}kN"  />
+  <van-cell title="真空推力" value="{{dataList[title].first_stage.thrust_vacuum.kN}}kN"  />
+</van-cell-group>
+<!-- 二级发动机 -->
+<van-cell-group inset>
+  <van-cell title="二级发动机" size="large"/>
+  <van-cell title="发动机数量" value="{{dataList[title].second_stage.engines}}"  />
+  <van-cell title="是否可回收" value=" {{dataList[title].second_stage.reusable}}"  />
+  <van-cell title="燃料重量" value="{{dataList[title].second_stage.fuel_amount_tons}}t"  />
+  <van-cell title="燃烧时间" value="{{dataList[title].second_stage.burn_time_sec}}s"  />
+  <van-cell title="真空推力" value="{{dataList[title].second_stage.thrust.kN}}kN"  />
+</van-cell-group>
+<!-- 运载能力 -->
+<van-cell-group inset>
+  <van-cell title="运载能力" size="large"/>
+  <van-cell title="近地轨道" value="{{dataList[title].payload_weights[0].kg}}kg"  />
+  <van-cell title="同步转移轨道" value="{{dataList[title].payload_weights[1].kg}}kg"  />
+  <van-cell title="火星轨道" value="{{dataList[title].payload_weights[2].kg}}kg"  />
+</van-cell-group>
+
+ 
+<text> \n\n\n</text>

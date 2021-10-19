@@ -1,13 +1,13 @@
 Component({
   data: {
     selected: 0,
-    color: "#",
-    selectedColor: "#13227a",
+    color: "#A0A0A0",
+    selectedColor: "#3978bb",
     list: [{
       pagePath: "/pages/index/index",
       iconPath: "/pages/images/huojian1.png",
       selectedIconPath: "/pages/images/huojian2.png",
-      text: "火箭"
+      text: "火箭信息"
     },{
       pagePath: "/pages/launches/index",
       iconPath: "/pages/images/fashe1.png",

@@ -1,3 +1,4 @@
+
 <view class="navbar">
   <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
 </view>
@@ -8,11 +9,11 @@
   <block wx:for="{{dataListupcoming}}">
         <navigator url="/pages/launches/launchone/index?title={{index}}" >
           <van-card
-            num="任务详情"
             tag="#{{dataListupcoming[index].flight_number}}"
-            price="{{dataListupcoming[index].date_utc}}"
-            title="{{dataListupcoming[index].name}}"
             thumb="{{dataListupcoming[index].links.patch.small}}"
+            title="{{dataListupcoming[index].name}}"
+            price="{{dataListupcoming[index].date_utc}}"
+            num="任务详情"
           ></van-card>
         </navigator>
     </block>
@@ -22,11 +23,11 @@
   <block wx:for="{{dataListpast}}">
         <navigator url="/pages/launches/launchone/index?title={{index}}" >
           <van-card
-            num="任务详情"
             tag="#{{dataListpast[index].flight_number}}"
-            price="{{dataListpast[index].date_utc}}"
-            title="{{dataListpast[index].name}}"
             thumb="{{dataListpast[index].links.patch.small}}"
+            title="{{dataListpast[index].name}}"
+            price="{{dataListpast[index].date_utc}}"
+            num="任务详情"
           ></van-card>
         </navigator>
     </block>
@@ -34,5 +35,5 @@
 
 
 
-
+<text> \n\n\n\n\n</text>
 
