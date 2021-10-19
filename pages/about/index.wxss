@@ -12,3 +12,14 @@
   text-align: center;
   color:#fff;
 }
+
+.staff {
+  font-size: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  line-height:45rpx;
+  margin-bottom: 0rpx;
+  margin-top: -10rpx;
+  color:#888888;
+  text-align: right;
+}
