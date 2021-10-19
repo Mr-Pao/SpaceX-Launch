@@ -1,0 +1,15 @@
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.image {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+ 

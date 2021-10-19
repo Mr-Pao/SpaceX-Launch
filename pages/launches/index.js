@@ -3,28 +3,43 @@ var app = getApp()
 var localData1 = require("../../data/Launches-past.js")
 var localData2 = require("../../data/Launches-upcoming.js")
 
-
 Page({
   //页面的初始数据
   data: {
-    navbar: ['待发射', '已发射'],
-    currentTab: 0,
+    navbar: ['已发射', '待发射'],
+    currentTab: 0
   },
 
   onLoad: function (options) {
     this.setData({
       //加载本地json数据,localData.dataList获取本地Rocket.js里定义的dataList数据，并赋值给dataList
-      dataListpast: localData1.dataListpast,
-      dataListupcoming: localData2.dataListupcoming
-    });
+      dataListpast: localData1.dataListpast.reverse(),
+      dataListupcoming: localData2.dataListupcoming,
+    })
   },
-  
+
+      /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 1
+        })
+      }
+  },
+
+  //标签页点击
   navbarTap: function (e) {
     this.setData({
       currentTab: e.currentTarget.dataset.idx
     })
   },
 
+ 
+
+  //下拉刷新
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh()
   },

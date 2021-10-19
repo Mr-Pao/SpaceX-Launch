@@ -33,3 +33,12 @@ page{
   bottom: 0;
   margin: auto;
 }  
+
+.details{
+  font-size: 21rpx;
+  color: rgb(114, 112, 112);
+  float:right;
+  position:absolute!important;
+  bottom: 150rpx;
+  left: 1rpx;
+}

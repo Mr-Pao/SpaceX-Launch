@@ -1,13 +1,27 @@
 
-<view class="navbar">
-  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+<view class="navbar" >
+  <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
 </view>
 
 <text> \n</text>
 
 <view hidden="{{currentTab!==0}}">
+  <block wx:for="{{dataListpast}}">
+        <navigator url="/pages/launches/launchpast/index?title={{index}}" >
+          <van-card
+            tag="#{{dataListpast[index].flight_number}}"
+            thumb="{{dataListpast[index].links.patch.small}}"
+            title="{{dataListpast[index].name}}"
+            price="{{dataListpast[index].date_utc}}"
+            num="任务详情"
+          ></van-card>
+        </navigator>
+    </block>
+</view>
+
+<view hidden="{{currentTab!==1}}">
   <block wx:for="{{dataListupcoming}}">
-        <navigator url="/pages/launches/launchone/index?title={{index}}" >
+        <navigator url="/pages/launches/launchupcoming/index?title={{index}}" >
           <van-card
             tag="#{{dataListupcoming[index].flight_number}}"
             thumb="{{dataListupcoming[index].links.patch.small}}"
@@ -19,19 +33,7 @@
     </block>
 </view>
 
-<view hidden="{{currentTab!==1}}">
-  <block wx:for="{{dataListpast}}">
-        <navigator url="/pages/launches/launchone/index?title={{index}}" >
-          <van-card
-            tag="#{{dataListpast[index].flight_number}}"
-            thumb="{{dataListpast[index].links.patch.small}}"
-            title="{{dataListpast[index].name}}"
-            price="{{dataListpast[index].date_utc}}"
-            num="任务详情"
-          ></van-card>
-        </navigator>
-    </block>
-</view>
+
 
 
 

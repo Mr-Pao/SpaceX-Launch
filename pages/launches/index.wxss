@@ -3,13 +3,6 @@ page{
     flex-direction: column;
     width: 100%;
   }
-  
-/*分割线样式*/
-.divLine{
-    background: #eee;
-    height: 3rpx;
-    margin-left: 0;
-   }
 
 /*发射头像*/
 .image {
@@ -62,7 +55,7 @@ page{
     color: #ffffff;
   }
   .navbar .item.active{
-    color: #1e36b9;
+    color: #3978bb;
   }
   .navbar .item.active:after{
     content: "";
@@ -72,5 +65,5 @@ page{
     left: 40px;
     right: 40px;
     height: 10rpx;
-    background: #1e36b9;
+    background: #3978bb;
   }

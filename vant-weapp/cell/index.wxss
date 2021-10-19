@@ -2,17 +2,17 @@
 .van-cell{
     background-color:var(--cell-background-color,#282828);
     box-sizing:border-box;
-    color:var(--cell-text-color,#FFF);
+    color:var(--cell-text-color,rgb(223, 223, 223));
     display:flex;
-    font-size:var(--cell-font-size,16px);
-    line-height:var(--cell-line-height,24px);
-    padding:var(--cell-vertical-padding,10px) var(--cell-horizontal-padding,16px);
+    font-size:var(--cell-font-size,12px);
+    line-height:var(--cell-line-height,18px);
+    padding:var(--cell-vertical-padding,8px) var(--cell-horizontal-padding,20px);
     position:relative;width:100%
 }
 
 .van-cell:after{
-    border-bottom:1px solid #a0a0a0;
-    bottom:0;
+    border-bottom:0px solid #a0a0a0;
+    bottom:1px;
     box-sizing:border-box;
     content:" ";
     left:16px;
@@ -39,7 +39,7 @@
 }
 
 .van-cell__value{
-    color:var(--cell-value-color,#e0e0e0);
+    color:var(--cell-value-color,#979696);
     overflow:hidden;
     text-align:right;
     vertical-align:middle
@@ -109,7 +109,9 @@
 }
 
 .van-cell--large .van-cell__value{
-    font-size:var(--cell-large-value-font-size,16px)
+    font-size:var(--cell-large-value-font-size,16px);
+    color:var(--cell-large-value-font-color,#3978BB);
+    font-weight:var(--cell-large-value-font-weight,bold);
 }
 
 .van-cell--large .van-cell__label{

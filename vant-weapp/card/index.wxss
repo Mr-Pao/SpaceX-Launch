@@ -13,7 +13,7 @@
     position:relative;
     margin-bottom: 20px;
     border-radius: 20rpx;
-    box-shadow: 4px 4px 8px  rgba(68, 68, 68, 0.5);
+    box-shadow:0;
 }
 
 .van-card__header{
@@ -44,7 +44,13 @@
 }
 
 .van-card__content{
-    display:flex;flex:1;flex-direction:column;justify-content:space-between;min-height:var(--card-thumb-size,88px);min-width:0;position:relative
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:var(--card-thumb-size,88px);
+    min-width:0;
+    position:relative
 }
     
 .van-card__content--center{justify-content:center}
@@ -52,27 +58,29 @@
 .van-card__desc,.van-card__title{word-wrap:break-word}
 
 .van-card__title{
-    font-size: 40rpx;
+    font-size: 35rpx;
     font-weight:550;
-    line-height:var(--card-title-line-height,35px)
+    line-height:var(--card-title-line-height,50rpx)
 }
 
 .van-card__desc{
     color:var(--card-desc-color,#a0a0a0);
-    line-height:var(--card-desc-line-height,30px)
+    line-height:var(--card-desc-line-height,50px)
 }
 
 .van-card__bottom{line-height:20px}
 
 .van-card__price{
-    color:var(--card-price-color,#ffffff);
-    display:inline-block;
-    font-size:var(--card-price-font-size,12px);
-    font-weight:500
+    color:var(--card-price-color,#a0a0a0);
+    display:inline;
+    font-size:var(--card-price-font-size,0rpx);
+    font-weight:500;
+    position:absolute!important;
+    top:120rpx
 }
 
 .van-card__price-integer{
-    font-size:var(--card-price-integer-font-size,16px)
+    font-size:var(--card-price-integer-font-size,14px)
 }
 
 .van-card__price-decimal,.van-card__price-integer{
@@ -89,7 +97,10 @@
 
 .van-card__num{
     color: rgb(187, 187, 187);
-    float:right
+    float:right;
+    position:absolute!important;
+    top: 120rpx;
+    right: 10rpx;
 }
 
 .van-card__tag{

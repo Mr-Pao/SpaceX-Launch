@@ -1,4 +1,4 @@
-
+<view class="intro">
 
 <text> \n\n</text>
 
@@ -6,6 +6,7 @@
   <view class="card" bindtap="onItemClick">
       <image class='image' mode="widthFix" src="/pages/images/{{navbar[1]}}/2.png"/>
       <view class="title">{{navbar[1]}}</view>
+      <view class="details">详细信息</view>
   </view>
 </navigator>
 
@@ -13,6 +14,7 @@
   <view class="card" bindtap="onItemClick">
       <image class='image' mode="widthFix" src="/pages/images/{{navbar[2]}}/2.png"/>
       <view class="title">{{navbar[2]}}</view>
+      <view class="details">详细信息</view>
   </view>
 </navigator>
 
@@ -20,7 +22,11 @@
   <view class="card" bindtap="onItemClick">
       <image class='image' mode="widthFix" src="/pages/images/{{navbar[3]}}/2.png"/>
       <view class="title">{{navbar[3]}}</view>
+      <view class="details">详细信息</view>
   </view>
 </navigator>
 
 <text> \n\n\n\n\n</text>
+
+</view>
+

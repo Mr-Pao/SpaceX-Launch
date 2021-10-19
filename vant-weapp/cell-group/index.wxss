@@ -1,9 +1,9 @@
 @import '../common/index.wxss';
 .van-cell-group--inset{
-    border-radius:var(--cell-group-inset-border-radius,8px);
-    margin:var(--cell-group-inset-padding,20px 16px);
+    border-radius:var(--cell-group-inset-border-radius,20px);
+    margin:var(--cell-group-inset-padding,16px 16px);
     overflow:hidden;
-    box-shadow:10rpx 10rpx 9rpx #808080
+    box-shadow:0
 }
 
 .van-cell-group__title{
