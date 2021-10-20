@@ -4,7 +4,7 @@
 
 <navigator url="/pages/index/Rocket/index?title=1">
   <view class="card" bindtap="onItemClick">
-      <image class='image' mode="widthFix" src="/pages/images/{{navbar[1]}}/2.png"/>
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[1]}}.jpg"/>
       <view class="title">{{navbar[1]}}</view>
       <view class="details">详细信息</view>
   </view>
@@ -12,7 +12,7 @@
 
 <navigator url="/pages/index/Rocket/index?title=2">
   <view class="card" bindtap="onItemClick">
-      <image class='image' mode="widthFix" src="/pages/images/{{navbar[2]}}/2.png"/>
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[2]}}.jpg"/>
       <view class="title">{{navbar[2]}}</view>
       <view class="details">详细信息</view>
   </view>
@@ -20,8 +20,16 @@
 
 <navigator url="/pages/index/Rocket/index?title=3">
   <view class="card" bindtap="onItemClick">
-      <image class='image' mode="widthFix" src="/pages/images/{{navbar[3]}}/2.png"/>
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[3]}}.jpg"/>
       <view class="title">{{navbar[3]}}</view>
+      <view class="details">详细信息</view>
+  </view>
+</navigator>
+
+<navigator url="/pages/index/Dragon/index?title=4">
+  <view class="card" bindtap="onItemClick">
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[4]}}.jpg"/>
+      <view class="title">{{navbar[4]}}</view>
       <view class="details">详细信息</view>
   </view>
 </navigator>
