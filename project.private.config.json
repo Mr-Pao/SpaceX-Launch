@@ -47,6 +47,12 @@
                     "pathName": "pages/launches/launchpast/index",
                     "query": "title=0",
                     "scene": null
+                },
+                {
+                    "name": "pages/index/Rocket/index",
+                    "pathName": "pages/index/Rocket/index",
+                    "query": "title=1",
+                    "scene": null
                 }
             ]
         }

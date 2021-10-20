@@ -8,6 +8,7 @@
 <van-cell-group inset>
   <van-cell title="{{dataList[title].name}}" size="large" />
   <van-cell title="{{dataList[title].description}}" />
+  <van-cell title="首次飞行时间" value="{{dataList[title].first_flight}}" />
   <van-cell title="发射费用" value="＄{{dataList[title].cost_per_launch}}" />
   <van-cell title="发射成功率" value="{{dataList[title].success_rate_pct}}%" />
   <van-cell title="高度" value="{{dataList[title].height.meters}}m" />
@@ -50,6 +51,14 @@
   <van-cell title="近地轨道" value="{{dataList[title].payload_weights[0].kg}}kg"  />
   <van-cell title="同步转移轨道" value="{{dataList[title].payload_weights[1].kg}}kg"  />
   <van-cell title="火星轨道" value="{{dataList[title].payload_weights[2].kg}}kg"  />
+</van-cell-group>
+<!-- 照片 -->
+<van-cell-group inset>
+  <van-cell title="相关照片" size="large"/>
+  <view wx:for="{{dataList[title].flickr_images}}"  >
+    <image  class="image" mode='aspectFill'  src="{{dataList[title].flickr_images[index]}}" ></image>
+  </view>
+  <view class="staff">图片较大，请耐心等待加载</view>
 </van-cell-group>
 
  

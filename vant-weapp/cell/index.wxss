@@ -4,10 +4,11 @@
     box-sizing:border-box;
     color:var(--cell-text-color,rgb(223, 223, 223));
     display:flex;
-    font-size:var(--cell-font-size,12px);
-    line-height:var(--cell-line-height,18px);
+    font-size:var(--cell-font-size,15px);
+    line-height:var(--cell-line-height,20px);
     padding:var(--cell-vertical-padding,8px) var(--cell-horizontal-padding,20px);
-    position:relative;width:100%
+    position:relative;
+    width:100%
 }
 
 .van-cell:after{
@@ -42,7 +43,7 @@
     color:var(--cell-value-color,#979696);
     overflow:hidden;
     text-align:right;
-    vertical-align:middle
+    vertical-align:middle;
 }
 
 .van-cell__title,.van-cell__value{
@@ -98,8 +99,8 @@
 }
 
 .van-cell--large{
-    padding-bottom:var(--cell-large-vertical-padding,12px);
-    padding-top:var(--cell-large-vertical-padding,12px)
+    padding-bottom:var(--cell-large-vertical-padding,15px);
+    padding-top:var(--cell-large-vertical-padding,20px)
 }
 
 .van-cell--large .van-cell__title{

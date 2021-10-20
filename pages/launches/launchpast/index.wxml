@@ -7,9 +7,21 @@
  
 <!-- 基本信息 -->
 <van-cell-group inset>
-  <van-cell title="{{dataListpast[title].name}}" size="large" value="#{{dataListpast[title].flight_number}}" />
+  <van-cell title="{{dataListpast[title].name}}" size="large" />
+  <van-cell value="#{{dataListpast[title].flight_number}}" />
   <van-cell value="{{dataListpast[title].date_utc}}" />
   <van-cell title="{{dataListpast[title].details}}" />
+</van-cell-group>
+
+<!-- 照片 -->
+<van-cell-group inset>
+<view  wx:if='{{dataListpast[title].links.flickr.original.length>0}}'>
+  <van-cell title="相关照片" size="large"/>
+  <view wx:for="{{dataListpast[title].links.flickr.original}}"  >
+    <image  class="image" mode='aspectFill'  src="{{dataListpast[title].links.flickr.original[index]}}" ></image>
+  </view>
+  <view class="staff">图片较大，请耐心等待加载</view>
+</view>
 </van-cell-group>
 
 

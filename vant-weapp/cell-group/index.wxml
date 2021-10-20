@@ -6,6 +6,6 @@
 >
   {{ title }}
 </view>
-<view class="custom-class {{ utils.bem('cell-group', { inset }) }} {{ border ? 'van-hairline--top-bottom' : '' }}">
+<view class="custom-class {{ utils.bem('cell-group', { inset }) }} ">
   <slot />
 </view>
