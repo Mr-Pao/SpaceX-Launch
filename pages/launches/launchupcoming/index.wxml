@@ -19,7 +19,7 @@
 <view  wx:if='{{dataListupcoming[title].links.flickr.original.length>0}}'>
   <van-cell title="相关照片" size="large"/>
   <view wx:for="{{dataListupcoming[title].links.flickr.original}}"  >
-    <image  class="image" mode='aspectFill'  src="{{dataListupcoming[title].links.flickr.original[index]}}" ></image>
+    <image  class="image" mode='widthFix'  src="{{dataListupcoming[title].links.flickr.original[index]}}" ></image>
   </view>
   <view class="staff">图片较大，请耐心等待加载</view>
 </view>

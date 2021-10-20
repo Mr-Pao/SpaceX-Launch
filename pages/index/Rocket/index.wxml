@@ -1,7 +1,7 @@
 
 <view >
   <text> \n\n</text>
-  <image  class="image" mode='aspectFill' src="/pages/images/{{dataList[title].name}}/2.png" ></image>
+  <image  class="image" mode='aspectFill' src="/pages/images/{{dataList[title].name}}.jpg" ></image>
 </view>
 
 <!-- 基本信息 -->
@@ -56,7 +56,7 @@
 <van-cell-group inset>
   <van-cell title="相关照片" size="large"/>
   <view wx:for="{{dataList[title].flickr_images}}"  >
-    <image  class="image" mode='aspectFill'  src="{{dataList[title].flickr_images[index]}}" ></image>
+    <image  class="image" mode='widthFix'  src="{{dataList[title].flickr_images[index]}}" ></image>
   </view>
   <view class="staff">图片较大，请耐心等待加载</view>
 </van-cell-group>

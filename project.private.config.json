@@ -53,6 +53,12 @@
                     "pathName": "pages/index/Rocket/index",
                     "query": "title=1",
                     "scene": null
+                },
+                {
+                    "name": "pages/index/Dragon/index",
+                    "pathName": "pages/index/Dragon/index",
+                    "query": "title=0",
+                    "scene": null
                 }
             ]
         }

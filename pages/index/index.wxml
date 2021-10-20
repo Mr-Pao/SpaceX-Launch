@@ -1,40 +1,58 @@
-<view class="intro">
-
-<text> \n\n</text>
-
+<!-- Falcon 9 -->
 <navigator url="/pages/index/Rocket/index?title=1">
   <view class="card" bindtap="onItemClick">
       <image class='image' mode="widthFix" src="/pages/images/{{navbar[1]}}.jpg"/>
       <view class="title">{{navbar[1]}}</view>
+      <view class="title2">{{navbar_t[1]}}</view>
       <view class="details">详细信息</view>
   </view>
 </navigator>
 
+<!-- Falcon Heavy -->
 <navigator url="/pages/index/Rocket/index?title=2">
   <view class="card" bindtap="onItemClick">
       <image class='image' mode="widthFix" src="/pages/images/{{navbar[2]}}.jpg"/>
       <view class="title">{{navbar[2]}}</view>
+      <view class="title2">{{navbar_t[2]}}</view>
       <view class="details">详细信息</view>
   </view>
 </navigator>
 
+<!-- Starship -->
 <navigator url="/pages/index/Rocket/index?title=3">
   <view class="card" bindtap="onItemClick">
       <image class='image' mode="widthFix" src="/pages/images/{{navbar[3]}}.jpg"/>
       <view class="title">{{navbar[3]}}</view>
+      <view class="title2">{{navbar_t[3]}}</view>
       <view class="details">详细信息</view>
   </view>
 </navigator>
 
-<navigator url="/pages/index/Dragon/index?title=4">
-  <view class="card" bindtap="onItemClick">
-      <image class='image' mode="widthFix" src="/pages/images/{{navbar[4]}}.jpg"/>
+<!-- Dragon -->
+<view  bindtap="showPopup" > 
+  <view class="card" bindtap="showPopup">
+      <image class='image' mode="widthFix" src="/pages/images/{{navbar[4]}}.jpg" />
       <view class="title">{{navbar[4]}}</view>
+      <view class="title2">{{navbar_t[4]}}</view>
       <view class="details">详细信息</view>
   </view>
-</navigator>
+</view>
+
+<van-popup show="{{ show }}" bind:close="onClose" position="bottom" custom-style="height: 45%" round>
+  <block wx:for="{{Dragon}}">
+        <navigator url="/pages/index/Dragon/index?title={{index}}" >
+          <van-card
+            tag="服役中"
+            thumb="/pages/images/Dragon{{index}}.png"
+            title="{{Dragon[index]}}"
+            price="首飞时间：{{Dragon_time[index]}}"
+            num="详情"
+          ></van-card>
+        </navigator>
+    </block>
+</van-popup>
+
+
 
 <text> \n\n\n\n\n</text>
-
-</view>
 

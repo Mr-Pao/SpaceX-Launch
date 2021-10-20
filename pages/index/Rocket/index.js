@@ -24,6 +24,7 @@ Page({
     wx.stopPullDownRefresh()
   },
 
+ 
   //转发此页面的设置
   onShareAppMessage: function (ops) {
     if (ops.from === 'button') {
@@ -31,7 +32,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      path: 'pages/index/Rocket/index',  // 路径，传递参数到指定页面。
+      path: 'pages/index/index',  // 路径，传递参数到指定页面。
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
@@ -50,7 +51,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      path: 'pages/index/Rocket/index',  // 路径，传递参数到指定页面。
+      path: 'pages/index/index',  // 路径，传递参数到指定页面。
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
@@ -63,5 +64,4 @@ Page({
   }
 
 })
-
 

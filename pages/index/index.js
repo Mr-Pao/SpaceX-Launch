@@ -3,7 +3,11 @@ var app = getApp()
 Page({
   data: {
     selected: 0,
+    show: false,
     navbar: ['Falcon 1', 'Falcon 9', 'Falcon Heavy', 'Starship','Dragon'],
+    navbar_t: ['猎鹰 1 火箭', '猎鹰 9 火箭', '重型猎鹰火箭', '星际飞船','龙飞船'],
+    Dragon: ['货运龙飞船','载人龙飞船'],
+    Dragon_time: ['2010-12-18','2019-03-02'],
   },
 
     /**
@@ -18,10 +22,18 @@ Page({
       }
   },
 
-
   //下拉刷新
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh()
+  },
+
+  //弹出层
+  showPopup() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
   },
 
   //转发此页面的设置

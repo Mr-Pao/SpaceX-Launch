@@ -1,7 +1,6 @@
-
-<view >
-  <text> \n\n</text>
-  <image  class="image" mode='aspectFill' src="/pages/images/{{dataList[title].name}}/2.png" ></image>
+<text> \n\n</text>
+<view  style="display:flex; justify-content:center; align-items:center;">
+  <image  class="image" mode='widthFix' style= "width: 60%;" src="/pages/images/Dragon{{title}}.png" ></image>
 </view>
 
 <!-- 基本信息 -->
@@ -9,13 +8,38 @@
   <van-cell title="{{dataList[title].name}}" size="large" />
   <van-cell title="{{dataList[title].description}}" />
   <van-cell title="首次飞行时间" value="{{dataList[title].first_flight}}" />
+  <van-cell title="高度" value="{{dataList[title].diameter.meters}} m" />
+  <van-cell title="直径" value="{{dataList[title].diameter.feet}} m" />
+  <van-cell title="重量" value="{{dataList[title].dry_mass_kg}} kg" />
+  <van-cell title="可载人数" value="{{dataList[title].crew_capacity}}" />
+  <van-cell title="发射有效载荷重量" value="{{dataList[title].launch_payload_mass.kg}} kg" />
+  <van-cell title="返回有效载荷重量" value="{{dataList[title].return_payload_mass.kg}} kg" />
+</van-cell-group>
+
+<!-- 隔热罩 -->
+<van-cell-group inset>
+  <van-cell title="隔热罩" size="large" />
+  <van-cell title="合作开发" value="{{dataList[title].heat_shield.dev_partner}}" />
+  <van-cell title="材料" value="{{dataList[title].heat_shield.material}}" />
+  <van-cell title="尺寸" value="{{dataList[title].heat_shield.size_meters}} m" />
+  <van-cell title="承受温度" value="{{dataList[title].heat_shield.temp_degrees}} °" />
+</van-cell-group>
+
+<!-- 推进器 -->
+<van-cell-group inset>
+  <van-cell title="推进器" size="large" />
+  <view wx:for="{{dataList[title].thrusters}}"  >
+    <van-cell value="{{dataList[title].thrusters[index].amount}} 台 {{dataList[title].thrusters[index].type}}" size="large"/>
+    <van-cell title="比冲" value="{{dataList[title].thrusters[index].isp}} 秒" />
+    <van-cell title="推力" value="{{dataList[title].thrusters[index].thrust.kN}} kN" />
+  </view>
 </van-cell-group>
 
 <!-- 照片 -->
 <van-cell-group inset>
   <van-cell title="相关照片" size="large"/>
   <view wx:for="{{dataList[title].flickr_images}}"  >
-    <image  class="image" mode='aspectFill'  src="{{dataList[title].flickr_images[index]}}" ></image>
+    <image  class="image" mode='widthFix'  src="{{dataList[title].flickr_images[index]}}" ></image>
   </view>
   <view class="staff">图片较大，请耐心等待加载</view>
 </van-cell-group>
