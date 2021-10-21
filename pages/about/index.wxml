@@ -15,3 +15,5 @@
 <view class="staff" bindtap="copyTBL">Pao_Leo (单击可复制)</view>
 <text> \n\n\n </text>
 
+<button class="title" bindtap="shouquan" type='primary'>获取订阅消息授权</button>
+<button bindtap="getOpenid">获取用户的openid并推送消息</button>

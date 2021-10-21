@@ -59,6 +59,24 @@
                     "pathName": "pages/index/Dragon/index",
                     "query": "title=0",
                     "scene": null
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "testpage/index",
+                    "pathName": "testpage/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/about/index",
+                    "pathName": "pages/about/index",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }
