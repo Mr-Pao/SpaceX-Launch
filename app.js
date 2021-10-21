@@ -1,12 +1,6 @@
 //app.js
 App({
   onLaunch: function () {
-    wx.cloud.init({
-      env: 'spacex-1ggdk6pp01a190ad'
-    })
-  },
-  
-  onLaunch: function () {
     if (wx.canIUse('getUpdateManager')) {
       const updateManager = wx.getUpdateManager()
       updateManager.onCheckForUpdate(function (res) {

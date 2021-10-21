@@ -19,21 +19,9 @@
                     "scene": null
                 },
                 {
-                    "name": "pages/launches/index",
-                    "pathName": "pages/launches/index",
-                    "query": "",
-                    "scene": null
-                },
-                {
                     "name": "pages/index/index",
                     "pathName": "pages/index/index",
                     "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/index/Rocket/index",
-                    "pathName": "pages/index/Rocket/index",
-                    "query": "title=1",
                     "scene": null
                 },
                 {
@@ -58,18 +46,6 @@
                     "name": "pages/index/Dragon/index",
                     "pathName": "pages/index/Dragon/index",
                     "query": "title=0",
-                    "scene": null
-                },
-                {
-                    "name": "pages/index/index",
-                    "pathName": "pages/index/index",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "testpage/index",
-                    "pathName": "testpage/index",
-                    "query": "",
                     "scene": null
                 },
                 {

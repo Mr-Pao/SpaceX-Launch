@@ -1,4 +1,3 @@
-
 <view class="navbar" >
   <view wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
 </view>
