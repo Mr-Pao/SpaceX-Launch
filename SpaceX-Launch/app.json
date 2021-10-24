@@ -15,25 +15,32 @@
     },
     "sitemapLocation": "sitemap.json",
     "tabBar": {
-        "custom": true,
         "backgroundColor": "#000",
-        "selectedColor": "#94070a",
-        "color": "#fff",
+        "selectedColor": "#3978bb",
+        "color": "#A0A0A0",
+        "borderStyle": "white",
         "list": [
-            {
-                "text": "火箭信息",
-                "pagePath": "pages/index/index"
-            },
-            {
-                "text": "发射任务",
-                "pagePath": "pages/launches/index"
-            },
-            {
-                "text": "关于",
-                "pagePath": "pages/about/index"
-            }
+          {
+            "text": "火箭信息",
+            "pagePath": "pages/index/index",
+            "iconPath": "pages/images/huojian1.png",
+            "selectedIconPath": "pages/images/huojian2.png"
+          },
+          {
+            "text": "发射任务",
+            "pagePath": "pages/launches/index",
+            "iconPath": "pages/images/fashe1.png",
+            "selectedIconPath": "pages/images/fashe2.png"
+          },
+          {
+            "text": "关于",
+            "pagePath": "pages/about/index",
+            "iconPath": "pages/images/guanyu1.png",
+            "selectedIconPath": "pages/images/guanyu2.png"
+          }
         ]
-    },
+      },
+      
     "usingComponents": {
         "van-cell": "vant-weapp/cell/index",
         "van-cell-group": "vant-weapp/cell-group/index",
