@@ -7,4 +7,6 @@ SpaceX火箭发射信息 微信小程序
 # 小程序截图
 <img src="https://github.com/xinag1/SpaceX-Launch/blob/main/%E6%88%AA%E5%9B%BE1.png"  width="300" /> <img src="https://github.com/xinag1/SpaceX-Launch/blob/main/%E6%88%AA%E5%9B%BE2.jpg"  width="300" />
 
+# 数据来源
+https://github.com/r-spacex/SpaceX-API
 
