@@ -45,7 +45,7 @@
     "compileType": "miniprogram",
     "libVersion": "2.20.0",
     "appid": "wxb1a4cbb5fa337016",
-    "projectname": "SpaceX",
+    "projectname": "SpaceX-Launch",
     "debugOptions": {
         "hidedInDevtools": []
     },
